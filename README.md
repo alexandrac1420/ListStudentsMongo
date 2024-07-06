@@ -120,6 +120,9 @@ To run the backend and frontend, follow these steps:
 
     The frontend will start on `http://localhost:3000` and and communicate with the backend to manage student records.
 
+   ![image](https://github.com/alexandrac1420/ListStudentsMongo/assets/138069735/86891171-a6e8-48f8-9ad0-aed92e77c4cd)
+
+
 ### Cross-Origin Resource Sharing (CORS)
 
 To resolve Cross-Origin Resource Sharing (CORS) issues, the backend includes the `@CrossOrigin` annotation on the controller. This allows the frontend running on a different port (3000) to communicate with the backend on port 8080 without any CORS issues.
