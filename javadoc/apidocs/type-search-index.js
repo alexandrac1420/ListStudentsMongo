@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.example.InyeccionMongo","l":"MdbSpringBootApplication"},{"p":"com.example.InyeccionMongo","l":"StudentController"},{"p":"com.example.InyeccionMongo","l":"StudentRepository"},{"p":"com.example.InyeccionMongo","l":"Students"}];updateSearchResults();

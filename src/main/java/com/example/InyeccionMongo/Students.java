@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/**
+ * Document class representing a student entity in MongoDB.
+ */
 @Document("students")
 public class Students {
 
@@ -11,13 +14,15 @@ public class Students {
     private String id;
     private String firstName;
     private String lastName;
-    private String age; // Mantener este campo para datos existentes
+    private String age; // Maintains this field for existing data
     private String email;
     private String program;
-    private String dateOfBirth; // Nuevo campo
+    private String dateOfBirth; // New field
 
+    // Default constructor
     public Students() {}
 
+    // Parameterized constructor
     public Students(String firstName, String lastName, String age, String email, String program, String dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -27,7 +32,7 @@ public class Students {
         this.dateOfBirth = dateOfBirth;
     }
 
-    // Getters y Setters
+    // Getters and Setters
     public String getId() {
         return id;
     }
@@ -84,6 +89,12 @@ public class Students {
         this.dateOfBirth = dateOfBirth;
     }
 
+    /**
+     * Static method to calculate the age based on the date of birth.
+     * 
+     * @param dateOfBirth The date of birth of the student.
+     * @return The age of the student as a String.
+     */
     public static String calculateAge(String dateOfBirth) {
         LocalDate dob = LocalDate.parse(dateOfBirth);
         LocalDate currentDate = LocalDate.now();
