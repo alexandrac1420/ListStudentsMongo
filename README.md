@@ -179,10 +179,14 @@ The backend of this project uses MongoDB Atlas, a cloud-hosted MongoDB service, 
 
 4. **Configure the Spring Boot Application:**
     - Open `src/main/resources/application.properties` and add the following:
+      
     ```properties
     spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
     ```
+    
     Replace `<username>`, `<password>`, and `<dbname>` with your MongoDB Atlas credentials and database name.
+
+![image](https://github.com/alexandrac1420/ListStudentsMongo/assets/138069735/1aa4d129-2f6e-405b-8fdf-6be69132d2db)
 
 
 ## Built With
